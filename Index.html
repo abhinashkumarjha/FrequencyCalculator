@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="frequencyCalc.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<title>TAFC</title>
+
+
+<body>
+<h1 align="center">Text Alphabet Frequency Calculator </h1>
+<p align="center"> This program calculates the frequency of each alphabet character entered in the textbox and visualizes it using Bar-Graph Plot</p>
+<div id="input" align="left">
+</br>
+<form>
+<textarea id="myTextBox" cols="40" rows="20" style="background-color:#FCF5D8;color:#AD8C08;border:5px double #AD8C08;">
+Enter some text...
+</textarea>
+<br />
+<input type="submit" onclick="GetText()"/>
+</form>
+<h2> or </h2>
+<h2> Enter a Text File </h2>
+<input id="inputFileToRead" type="file" onchange="inputFileToRead_Changed(this);">(Path to the Text(*.txt) File)</input>
+</center>
+</div>
+<div id="D3place" align="right" onload="GetText()">
+	<table id="mytable" align="center">
+		 <font size="2.5"><h4 align="center" style="size:20">Table</h4></font>
+		<tr>
+			<td>Alphabet</td>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+			<td>J</td>
+			<td>K</td>
+			<td>L</td>
+			<td>M</td>
+			<td>N</td>
+			<td>O</td>
+			<td>P</td>
+			<td>Q</td>
+			<td>R</td>
+			<td>S</td>
+			<td>T</td>
+			<td>U</td>
+			<td>V</td>
+			<td>W</td>
+			<td>X</td>
+			<td>Y</td>
+			<td>Z</td>		
+		</tr>
+		<tr>
+			<td>Frequency</td>
+			<td id="A">NA</td>
+			<td id="B">NA</td>
+			<td id="C">NA</td>
+			<td id="D">NA</td>
+			<td id="E">NA</td>
+			<td id="F">NA</td>
+			<td id="G">NA</td>
+			<td id="H">NA</td>
+			<td id="I">NA</td>
+			<td id="J">NA</td>
+			<td id="K">NA</td>
+			<td id="L">NA</td>
+			<td id="M">NA</td>
+			<td id="N">NA</td>
+			<td id="O">NA</td>
+			<td id="P">NA</td>
+			<td id="Q">NA</td>
+			<td id="R">NA</td>
+			<td id="S">NA</td>
+			<td id="T">NA</td>
+			<td id="U">NA</td>
+			<td id="V">NA</td>
+			<td id="W">NA</td>
+			<td id="X">NA</td>
+			<td id="Y">NA</td>
+			<td id="Z">NA</td>
+		</tr>
+  
+	</table>
+</div>
+</body>
+</html>
